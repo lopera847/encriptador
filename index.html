@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="img/enigmaico.png" type="image/x-icon">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="main">
+            <section>
+                <div class="encriptar">  
+                    <textarea id="texto-encriptador" class="campo-texto" placeholder="texto para encriptar o desencriptar" ></textarea>
+                </div>
+                
+                <div class="condiciones">
+                     <p>Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="botones">
+                    <button class="BtnEncriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="BtnDesencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                    <button class="BtnCopiar" id="boton-copiar" onclick="copiarPortapapeles()"  >Copiar</button>
+                </div>
+            </section>
+            <section class="campo-mensaje">             
+                <textarea id="texto-desencriptado" class="campo-desencriptado"  readonly="readonly" ></textarea>
+                <div class="encriptado">
+                    <img src="img/enigma.png" alt="" id="muñeco" />
+
+               </div> 
+            </section>
+          
+    </main>
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>Challeng one Alura by Juan Lopera</h2>
+                
+            </div>
+            <div class="michis">
+                <img src="img/michi.jpg" alt="" id="michi" />
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
